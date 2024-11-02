@@ -1,0 +1,88 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    transition: background 0.7s;
+}
+
+.background {
+    transition: 0.7s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    filter: blur(5px);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.logo {
+    width: 80%;
+    max-width: 600px;
+    opacity: 0;
+    filter: blur(20px);
+    transform: scale(2.0);
+    transition: opacity 0.7s, filter 0.7s, transform 0.7s;
+}
+
+.word {
+    text-shadow: rgb(0, 0, 0) 0 0 3px;
+    font-size: 4em;
+    position: absolute;
+    top: 10%;
+    opacity: 0;
+    transition: opacity 0.7s, transform 0.7s;
+}
+
+.word1 {
+    left: 40%;
+    transform: translate(0%, -100%);
+}
+
+.word2 {
+    left: 20%;
+    transform: translate(-100%, -50%);
+}
+
+.word3 {
+    right: 18%;
+    transform: translate(100%, -50%);
+}
+
+.visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0,0);
+}
+
+.text-field {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.7);
+    transform: translateY(30%);
+    opacity: 0;
+    transition: transform 0.7s, opacity 1s;
+}
+
+.text-field-visible {
+    transform: translateY(20%);
+    opacity: 1;
+}
