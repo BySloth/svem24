@@ -74,7 +74,7 @@
 .dropdown-menu.show {
     display: block;
     opacity: 1; /* Show with smooth transition */
-    filter: blur(0); /* Clear the blur when showing */
+    filter: blur(2px); /* Clear the blur when showing */
 }
 
 .dropdown-menu ul {
