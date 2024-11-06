@@ -56,6 +56,7 @@
 }
 
 .dropdown-menu {
+    backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
     left: 0;
@@ -66,7 +67,7 @@
     z-index: 0; /* Ensure it's behind the logo */
     opacity: 0; /* Start hidden */
     filter: blur(5px); /* Start blurred */
-    transition: opacity 0.7s ease, filter 0.7s ease; /* Extend to 0.7 seconds */
+    transition: opacity 0.5s ease, filter 0.5s ease; /* Extend to 0.7 seconds */
     display: none; /* Initially hidden */
 }
 
@@ -83,6 +84,7 @@
 }
 
 .dropdown-menu li {
+    transition: 0.3s;
     height: 7vh;
     margin-top: 1vh;
     padding: 8px 16px;

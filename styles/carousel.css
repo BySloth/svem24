@@ -1,0 +1,59 @@
+.carousel, .carousel_1, .carousel_2, .carousel_3, .carousel_4 {
+    z-index:2;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* max-width: 600px; */
+    overflow: hidden;
+  }
+  
+  .carousel-container, .carousel-container_1, .carousel-container_2, .carousel-container_3, .carousel-container_4 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-image, .carousel-image_1, .carousel-image_2, .carousel-image_3, .carousel-image_4 {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-image.active, .carousel-image_1.active, .carousel-image_2.active, .carousel-image_3.active, .carousel-image_4.active {
+    opacity: 1;
+  }
+  
+  .carousel-controls, .carousel-controls_1, .carousel-controls_2, .carousel-controls_3, .carousel-controls_4 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .arrow, .arrow_1, .arrow_2, .arrow_3, .arrow_4 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .carousel-indicators, .carousel-indicators_1, .carousel-indicators_2, .carousel-indicators_3, .carousel-indicators_4 {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .indicator, .indicator_1, .indicator_2, .indicator_3, .indicator_4 {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .indicator.active, .indicator_1.actiive, .indicator_2.active, .indicator_3.active, .indicator_4.active {
+    background-color: #333;
+  }
