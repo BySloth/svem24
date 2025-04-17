@@ -4,6 +4,15 @@ body {
   display: flex;
   background-color: #cbb996ca;
 }
+#aboba {
+  position: fixed;
+  z-index: -3;
+}
+
+#aboba2{
+  margin-left: 23.5vw;
+  max-width: 72vw;
+}
 
 .pioption_container {
   margin-top: 14vh;
@@ -45,6 +54,12 @@ body {
 .pioption.active {
   opacity: 1;
 }
+
+.pioption-hidden{
+  opacity: 0;
+
+}
+
 .pioption.enter-from-bottom {
   transform: translateY(100%);
 }
@@ -62,5 +77,5 @@ body {
 .pioption img {
   max-width: 100%;
   max-height: 100%;
-  /* border-radius: 5px; */
+  border-radius: 5px;
 }
